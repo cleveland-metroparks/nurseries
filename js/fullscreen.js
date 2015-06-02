@@ -44,7 +44,7 @@ featureLayer.eachLayer(function(layer) {
         '<p class="popup-p">' + '<span>Solution: </span>' +layer.feature.properties.solution + '</p>'
 	+ '</p>' + '</div>';
 
-	markers.addLayer(marker);
+	markers.addLayer(layer);
     layer.bindPopup(content);
 				
 });
