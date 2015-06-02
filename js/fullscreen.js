@@ -39,18 +39,17 @@ featureLayer.eachLayer(function(layer) {
     // here you call `bindPopup` with a string of HTML you create - the feature
     // properties declared above are available under `layer.feature.properties`
     var content = '<div>' + '<h2>' + layer.feature.properties.Nursery + '</h2>' +
-        '<p class="popup-p">' + '<span>Address: </span>' +layer.feature.properties.Address + '</p>' +
-        '<p class="popup-p">' + ( layer.feature.properties.Contact_Number !== 'mull' ? '<span>Phone: </span>' + layer.feature.properties.Contact_Number : "" ) +  '</p>' +
+        '<p class="popup-p">' + '<span>Address: </span>' +layer.feature.properties.Address + '</p>' //+
+//        '<p class="popup-p">' + ( layer.feature.properties.LocationA !== 'mull' ? '<span>Area: </span>' + layer.feature.properties.LocationA : "" ) +  '</p>' +
 		
-		'<p class="popup-p">' + ( layer.feature.properties.Facebook !== 'mull' ? '<span>Website: </span>' + '<a href="' + layer.feature.properties.Facebook + '" target="_blank">' + layer.feature.properties.Facebook : "") + '</a>' + '</p>' +
+//		'<p class="popup-p">' + ( layer.feature.properties.LocationB !== 'mull' ? '<span>Site: </span>' + '<a href="' + layer.feature.properties.Facebook + '" target="_blank">' + layer.feature.properties.Facebook : "") + '</a>' + '</p>' +
 		
-		'<p class="popup-p">' + ( layer.feature.properties.Keep !== 'mull' ? '<span>Plants: </span>' + layer.feature.properties.Keep : "" ) +  '</p>' +
-        '<p class="popup-p">' + ( layer.feature.properties.addrtype !== 'mull' ? '<span>Other: </span>' + layer.feature.properties.addrtype : "" )
+//		'<p class="popup-p">' + ( layer.feature.properties.Barrier !== 'mull' ? '<span>Plants: </span>' + layer.feature.properties.Keep : "" ) +  '</p>' +
+//        '<p class="popup-p">' + ( layer.feature.properties.addrtype !== 'mull' ? '<span>Other: </span>' + layer.feature.properties.addrtype : "" )
 	+ '</p>' + '</div>';
 
     layer.bindPopup(content);
 });
-
 
 
 
