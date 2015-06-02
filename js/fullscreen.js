@@ -49,6 +49,7 @@ featureLayer.eachLayer(function(layer) {
 				
 });
 
+map.addLayer(markers);
 
 var searchControl = new L.Control.Search({layer: featureLayer, propertyName: 'locationb', circleLocation:true});
 
