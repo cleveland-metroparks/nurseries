@@ -4,8 +4,8 @@ var southWest = L.latLng(33.064, -99.053),
     northEast = L.latLng(50.679, -69.697),
     bounds = L.latLngBounds(southWest, northEast);
 
-var map = L.map('map').setView([41.44709, -81.71098], 19);
-
+var map = L.map('map').setView([41.447, -81.714], 17);
+ 
 L.tileLayer('../tiles/{z}/{y}/{x}.png', {
 	maxZoom: 21,
 	minZoom: 11
