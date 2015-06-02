@@ -28,8 +28,7 @@ $('.menu-ui a').on('click', function() {
     return false;
 });
 
-
-
+	var markers = L.markerClusterGroup();
 
 // Note that calling `.eachLayer` here depends on setting GeoJSON _directly_
 // above. If you're loading GeoJSON asynchronously, like from CSV or from a file,
@@ -46,7 +45,9 @@ featureLayer.eachLayer(function(layer) {
 	+ '</p>' + '</div>';
 
     layer.bindPopup(content);
+	markers.addLayer(marker);
 });
+
 
 var searchControl = new L.Control.Search({layer: featureLayer, propertyName: 'locationb', circleLocation:true});
 
