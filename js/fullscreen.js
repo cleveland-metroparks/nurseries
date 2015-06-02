@@ -54,3 +54,14 @@ featureLayer.eachLayer(function(layer) {
     layer.bindPopup(content);
 });
 
+var searchControl = new L.Control.Search({layer: featureLayer, propertyName: 'locationab', circleLocation:true});
+
+    searchControl.on('search_locationfound', function(e) {
+
+            e.layer.bindPopup(feature.properties.Name).openPopup();
+
+    }).on('search_collapsed', function(e) {
+            markers2.resetStyle(layer);
+    });
+
+map.addControl( searchControl );  //inizialize search control
