@@ -48,7 +48,7 @@ featureLayer.eachLayer(function(layer) {
     layer.bindPopup(content);
 });
 
-var searchControl = new L.Control.Search({layer: feature	Layer, propertyName: 'locationb', circleLocation:true});
+var searchControl = new L.Control.Search({layer: feature	Layer, propertyName: 'locationb', circleLocation:false});
 
 	searchControl.on('search_locationfound', function(e) {
 		
