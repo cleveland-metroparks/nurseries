@@ -58,7 +58,7 @@ var searchControl = new L.Control.Search({layer: featureLayer, propertyName: 'lo
 
     searchControl.on('search_locationfound', function(e) {
 
-            e.layer.bindPopup(feature.properties.Name).openPopup();
+            e.layer.bindPopup(feature.properties.locationb).openPopup();
 
     }).on('search_collapsed', function(e) {
             featureLayer.resetStyle(layer);
