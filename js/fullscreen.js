@@ -39,8 +39,8 @@ featureLayer.eachLayer(function(layer) {
     // here you call `bindPopup` with a string of HTML you create - the feature
     // properties declared above are available under `layer.feature.properties`
     var content = '<div>' + '<h2>' + layer.feature.properties.locationa + '</h2>' +
-		'<h3>' + layer.feature.properties.locationa + '</h3>' +
-        '<p class="popup-p">' + '<span>Address: </span>' +layer.feature.properties.Address + '</p>' //+
+		'<h3>' + layer.feature.properties.locationb + '</h3>' +
+        '<p class="popup-p">' + '<span>Barrier: </span>' +layer.feature.properties.barrier + '</p>' //+
 //        '<p class="popup-p">' + ( layer.feature.properties.LocationA !== 'mull' ? '<span>Area: </span>' + layer.feature.properties.LocationA : "" ) +  '</p>' +
 		
 //		'<p class="popup-p">' + ( layer.feature.properties.LocationB !== 'mull' ? '<span>Site: </span>' + '<a href="' + layer.feature.properties.Facebook + '" target="_blank">' + layer.feature.properties.Facebook : "") + '</a>' + '</p>' +
