@@ -42,13 +42,7 @@ featureLayer.eachLayer(function(layer) {
 		'<h3>' + layer.feature.properties.locationb + '</h3>' +
         '<p class="popup-p">' + '<span>Barrier: </span>' +layer.feature.properties.barrier + '</p>' +
         '<p class="popup-p">' + '<span>ADAAG: </span>' +layer.feature.properties.adaag + '</p>' +
-        '<p class="popup-p">' + '<span>Solution: </span>' +layer.feature.properties.solution + '</p>' //+
-//        '<p class="popup-p">' + ( layer.feature.properties.LocationA !== 'mull' ? '<span>Area: </span>' + layer.feature.properties.LocationA : "" ) +  '</p>' +
-		
-//		'<p class="popup-p">' + ( layer.feature.properties.LocationB !== 'mull' ? '<span>Site: </span>' + '<a href="' + layer.feature.properties.Facebook + '" target="_blank">' + layer.feature.properties.Facebook : "") + '</a>' + '</p>' +
-		
-//		'<p class="popup-p">' + ( layer.feature.properties.Barrier !== 'mull' ? '<span>Plants: </span>' + layer.feature.properties.Keep : "" ) +  '</p>' +
-//        '<p class="popup-p">' + ( layer.feature.properties.addrtype !== 'mull' ? '<span>Other: </span>' + layer.feature.properties.addrtype : "" )
+        '<p class="popup-p">' + '<span>Solution: </span>' +layer.feature.properties.solution + '</p>'
 	+ '</p>' + '</div>';
 
     layer.bindPopup(content);
