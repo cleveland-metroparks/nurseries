@@ -48,14 +48,19 @@ featureLayer.eachLayer(function(layer) {
     layer.bindPopup(content);
 });
 
-var searchControl = new L.Control.Search({layer: featureLayer, propertyName: 'locationab', circleLocation:true});
+var searchControl = new L.Control.Search({layer: featuresLayer, propertyName: 'locationb', circleLocation:false});
 
-    searchControl.on('search_locationfound', function(e) {
+	searchControl.on('search_locationfound', function(e) {
+		
+		e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+		if(e.layer._popup)
+			e.layer.openPopup();
 
-            e.layer.bindPopup(feature.properties.locationb).openPopup();
+	}).on('search_collapsed', function(e) {
 
-    }).on('search_collapsed', function(e) {
-            featureLayer.resetStyle(layer);
-    });
-
+		featuresLayer.eachLayer(function(layer) {	//restore feature color
+			featuresLayer.resetStyle(layer);
+		});	
+	});
+	
 map.addControl( searchControl );  //inizialize search control
