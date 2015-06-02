@@ -61,7 +61,7 @@ var searchControl = new L.Control.Search({layer: featureLayer, propertyName: 'lo
             e.layer.bindPopup(feature.properties.Name).openPopup();
 
     }).on('search_collapsed', function(e) {
-            markers2.resetStyle(layer);
+            featureLayer.resetStyle(layer);
     });
 
 map.addControl( searchControl );  //inizialize search control
