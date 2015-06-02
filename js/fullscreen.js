@@ -4,7 +4,7 @@ var southWest = L.latLng(33.064, -99.053),
     northEast = L.latLng(50.679, -69.697),
     bounds = L.latLngBounds(southWest, northEast);
 
-var map = L.mapbox.map('map', 'examples.map-i86nkdio', {
+var map = L.mapbox.map('map', 'cleveland-metroparks.mbd2794e', {
     maxBounds: bounds,
 	maxZoom: 22,
 	minZoom: 11
