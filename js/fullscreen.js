@@ -6,8 +6,7 @@ var southWest = L.latLng(33.064, -99.053),
 
 var map = L.map('map').setView([41.44709, -81.71098], 19);
 
-L.tileLayer('http://{s}.tiles.mapbox.com/v3/MapID/997/256/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+L.tileLayer('tiles/{z}/{y}/{x}.png', {
 	maxZoom: 22,
 	minZoom: 11
 }).addTo(map)
