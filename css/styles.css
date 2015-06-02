@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 body {
 	background-image:url('../images/background.jpg');
@@ -27,7 +27,7 @@ li ol, li ul {
 }
 
 h2 { 
-font-family: 'Source Serif Pro', serif;
+font-family: 'Roboto Condenced', sans-serif;
 	font-size:20px;
 	text-align:center;
 	font-size:20px;
@@ -37,7 +37,7 @@ font-family: 'Source Serif Pro', serif;
 }
 
 h3 { 
-font-family: 'Source Serif Pro', serif;
+font-family: 'Roboto Condenced', sans-serif;
 	font-size:24px;
 	text-align:center;
 	color:#000;
@@ -50,7 +50,7 @@ font-family: 'Source Serif Pro', serif;
 }
 
 h5 {
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Roboto Condenced', sans-serif;
 	font-size:16px;
 	text-align:center;
 	color:#000;
