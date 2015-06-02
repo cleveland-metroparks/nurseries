@@ -42,7 +42,7 @@ featureLayer.eachLayer(function(layer) {
         '<p class="popup-p">' + '<span>Barrier: </span>' +layer.feature.properties.barrier + '</p>' +
         '<p class="popup-p">' + '<span>ADAAG: </span>' +layer.feature.properties.adaag + '</p>' +
         '<p class="popup-p">' + '<span>Solution: </span>' +layer.feature.properties.solution + '</p>' +		
- 		'<p class="popup-p">' + ( layer.feature.properties.Facebook !== 'mull' ? '<span>Website: </span>' + '<a href="' + layer.feature.properties.adaag + '" target="_blank">' + layer.feature.properties.adaag : "") + '</a>' + '</p>'
+ 		'<p class="popup-p">' + ( layer.feature.properties.Facebook !== 'mull' ? '<span>Website: </span>' + '<a href="' + layer.feature.properties.fulcrum_id + '" target="_blank">' + layer.feature.properties.fulcrum_id : "") + '</a>' + '</p>'
 				
 		
 	+ '</p>' + '</div>';
