@@ -7,7 +7,7 @@ var southWest = L.latLng(33.064, -99.053),
 var map = L.map('map').setView([41.44709, -81.71098], 19);
 
 L.tileLayer('../tiles/{z}/{y}/{x}.png', {
-	maxZoom: 22,
+	maxZoom: 21,
 	minZoom: 11
 }).addTo(map)
 ;	
