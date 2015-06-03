@@ -42,8 +42,8 @@ featureLayer.eachLayer(function(layer) {
 		'<h3>' + layer.feature.properties.locationb + '</h3>' +
         '<p class="popup-p">' + '<span>Barrier: </span>' + layer.feature.properties.barrier + '</p>' +
         '<p class="popup-p">' + '<span>ADAAG: </span>' + layer.feature.properties.adaag + '</p>' +
-        '<p class="popup-p">' + '<span>Solution: </span>' + layer.feature.properties.solution + '</p>' +
-        '<p class="popup-p">' + '<div hidden>' + layer.feature.properties.aggregate + '</div>' + '</p>' 
+        '<p class="popup-p">' + '<span>Solution: </span>' + layer.feature.properties.solution + '</p>' //+
+ //     '<p class="popup-p">' + '<div hidden>' + layer.feature.properties.aggregate + '</div>' + '</p>' 
  //		'<p class="popup-p">' + ( layer.feature.properties.Facebook !== 'mull' ? '<span>Website: </span>' + '<a href="' + layer.feature.properties.fulcrum_id + '" target="_blank">' + layer.feature.properties.fulcrum_id : "") + '</a>' + '</p>'	
 	+ '</p>' + '</div>';
 
@@ -54,7 +54,7 @@ featureLayer.eachLayer(function(layer) {
 
 map.addLayer(markers);
 
-var searchControl = new L.Control.Search({layer: markers, propertyName: 'aggregate', circleLocation:true});
+var searchControl = new L.Control.Search({layer: markers, propertyName: 'aggregated', circleLocation:true});
 
 	searchControl.on('search_locationfound', function(e) {
 		
