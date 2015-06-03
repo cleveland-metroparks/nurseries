@@ -53,7 +53,7 @@ featureLayer.eachLayer(function(layer) {
 
 map.addLayer(markers);
 
-var searchControl = new L.Control.Search({layer: markers, propertyName: 'locationb', circleLocation:true});
+var searchControl = new L.Control.Search({layer: markers, propertyName: 'aggregate', circleLocation:true});
 
 	searchControl.on('search_locationfound', function(e) {
 		
