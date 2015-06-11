@@ -1,6 +1,6 @@
-nurseries
+Zoo ADA Map
 =========
 
-Hosting for the native plant nursery map.
+Hosting for the Zoo ADA map.
 
-http://cleveland-metroparks.github.io/nurseries/
+http://bgarman4.github.io/zoo-ada-draft/pages/fullscreen.html
